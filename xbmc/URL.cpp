@@ -1,5 +1,5 @@
 /*
- *      Copyright (C) 2005-2008 Team XBMC
+ *      Copyright (C) 2005-2012 Team XBMC
  *      http://www.xbmc.org
  *
  *  This Program is free software; you can redistribute it and/or modify
@@ -13,9 +13,7 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with XBMC; see the file COPYING.  If not, write to
- *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
- *  http://www.gnu.org/copyleft/gpl.html
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 
@@ -142,7 +140,7 @@ void CURL::Parse(const CStdString& strURL1)
     m_strProtocol.Equals("virtualpath") ||
     m_strProtocol.Equals("multipath") ||
     m_strProtocol.Equals("filereader") ||
-    m_strProtocol.Equals("special")
+    m_strProtocol.Equals("special")  //|| m_strProtocol.Equals("cue") ??
     )
   {
     SetFileName(strURL.Mid(iPos));
